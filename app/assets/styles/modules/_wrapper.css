@@ -1,5 +1,27 @@
 
 .wrapper {
+    overflow: hidden; /* skirj go toa sto strci.. overflow   */
     padding-left: 18px;
     padding-right: 18px;
+    max-width: 1236px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &--medium{
+        max-width: 976px;
+    }
+
+    &--b-margin {
+        margin-bottom: 1rem;
+    }
+
+    @mixin atMedium {
+        margin-bottom: 3.85rem;
+    }
+
+    /* for every wrapper that's inside a wrapper..  */
+    .wrapper{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

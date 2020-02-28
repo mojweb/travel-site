@@ -19,3 +19,13 @@
     }
 }
 
+@define-mixin clearfix {
+    /* clear/fix the floating issue  
+    selects everything after the raw selector*/
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
