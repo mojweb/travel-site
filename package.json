@@ -22,6 +22,7 @@
     "autoprefixer": "^9.7.4",
     "lodash": "^4.17.15",
     "normalize.css": "^8.0.1",
+    "postcss-hexrgba": "^2.0.0",
     "postcss-nested": "^4.2.1",
     "postcss-simple-vars": "^5.0.2"
   },

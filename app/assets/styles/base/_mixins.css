@@ -1,31 +1,25 @@
 @define-mixin atSmall {
-    /* for screens larger than 530px */
-    @media (min-width: 530px){
-        @mixin-content;
-    }
+  @media (min-width: 530px) {
+    @mixin-content;
+  }
 }
 
 @define-mixin atMedium {
-    /* for screens larger than 800px */
-    @media (min-width: 800px){
-        @mixin-content;
-    }
+  @media (min-width: 800px) {
+    @mixin-content;
+  }
 }
 
 @define-mixin atLarge {
-    /* for screens larger than 1200px */
-    @media (min-width: 1200px){
-        @mixin-content;
-    }
+  @media (min-width: 1010px) {
+    @mixin-content;
+  }
 }
 
 @define-mixin clearfix {
-    /* clear/fix the floating issue  
-    selects everything after the raw selector*/
-    &::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
-

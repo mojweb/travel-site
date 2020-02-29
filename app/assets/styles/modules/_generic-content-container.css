@@ -1,20 +1,17 @@
 .generic-content-container {
+  
+  p {
+    font-weight: 300;
+    line-height: 1.65;
+    margin: 0 0 1.8rem 0;
 
-    p {
-        line-height: 1.65;
-        font-weight: 300;
-        /* 1.8 top/bottom, and 0 left/right  */
-        /* margin: 1.8rem 0; */
-        /* 0 top 0 right 1.8 bottom, and 0 left  */
-        margin: 0 0 1.8rem 0;
-
-        @mixin atSmall {
-            font-size: 1.125rem;
-        }
+    @mixin atSmall {
+      font-size: 1.125rem;
     }
+  }
 
-    p a {
-        font-weight: 700;
-    }
+  p a {
+    font-weight: 700;
+  }
 
 }
