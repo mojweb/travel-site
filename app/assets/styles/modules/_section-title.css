@@ -1,0 +1,27 @@
+.section-title {
+    font-size: 2.55rem;
+    font-weight: 300;
+    text-align: center;
+
+    @mixin atSmall{
+        font-size: 3.75rem;
+    }
+
+    strong{
+        font-weight: 500;
+    }
+
+    &__icon {
+        display: block; /*  set the icon on top of the title  */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.6rem;
+
+        @mixin atSmall{  /* on bigger displays  */ 
+            margin-right: 0.5rem;
+            margin-left: 0;
+            display: inline-block; /*  set the icon on the same line as the title */ 
+            margin-bottom: 0;
+        }
+    }
+}
