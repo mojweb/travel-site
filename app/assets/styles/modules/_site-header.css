@@ -3,13 +3,22 @@
   position: absolute;
   width: 100%;
   z-index: 2;
+  transition: background-color .3s ease-out;
+
+  &--is-expanded{
+    background-color: rgba($mainBlue, .55);
+  }
   
   @mixin atMedium {
     background-color: rgba($mainBlue, .3);
   }
 
   &__btn-container {
-    float: right;
+
+    @mixin atMedium {
+      float: right;
+    }
+
   }
 
   &__logo {
@@ -41,14 +50,22 @@
   }
 
   &__menu-content {
-    display: none;
+    opacity: 0;  /* make the menu invisible (but still clickable) */
+    transition: all .3s ease-out;
+    position: relative; /*  to make the z-index: work */
+    z-index: -10; /* hide the menu, and make it non clickable */
+    padding-top: 100px;
+    text-align: center;
 
     @mixin atMedium {
-      display: block;
+      opacity: 1;
+      z-index: 1;
+      padding-top: 0;
     }
 
     &--is-visible {
-      display: block;
+      opacity: 1; /* make it visible */
+      z-index: 1;  /* show the menu up front , to make it clickable */
     }
 
   }
