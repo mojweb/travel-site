@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/mojweb/travel-site#readme",
   "dependencies": {
+    "acorn": "^7.1.1",
     "autoprefixer": "^9.7.4",
     "lodash": "^4.17.15",
     "normalize.css": "^8.0.1",
