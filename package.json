@@ -22,6 +22,7 @@
     "acorn": "^7.1.1",
     "autoprefixer": "^9.7.4",
     "lodash": "^4.17.19",
+    "node-forge": "^0.10.0",
     "normalize.css": "^8.0.1",
     "postcss-hexrgba": "^2.0.0",
     "postcss-nested": "^4.2.1",
